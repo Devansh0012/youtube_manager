@@ -9,27 +9,32 @@ def update_video(video):
 
 def delete_video(video):
     pass
+def main():
+    videos = []
 
-videos = []
-
-while True:
-    print("\n YouTube Manager | choose an option ")
-    print("1. List all YouTube videos ")
-    print("2. Add a YouTube video ")
-    print("3. Update a YouTube video details ")
-    print("4. Delete a YouTube video ")
-    print("5. Exite the app ")
-    
-    choice = input("Enter your choice: ")
-    
-    match choice:
-        case "1":
-            list_all_videos(videos)
-        case "2":
-            add_video(videos)
-        case "3":
-            update_video(videos)
-        case "4":
-            delete_video(videos)
-        case "5":
-            exit()
+    while True:
+        print("\n YouTube Manager | choose an option ")
+        print("1. List all YouTube videos ")
+        print("2. Add a YouTube video ")
+        print("3. Update a YouTube video details ")
+        print("4. Delete a YouTube video ")
+        print("5. Exite the app ")
+        
+        choice = input("Enter your choice: ")
+        
+        match choice:
+            case "1":
+                list_all_videos(videos)
+            case "2":
+                add_video(videos)
+            case "3":
+                update_video(videos)
+            case "4":
+                delete_video(videos)
+            case "5":
+                break
+            case _:
+                print("Invalid choice! Please try again. ")
+                
+if __name__ == "__main__":
+    main()
