@@ -94,6 +94,8 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+            
+    conn.close()
 
 
 if __name__ == '__main__':
