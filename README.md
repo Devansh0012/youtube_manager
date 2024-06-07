@@ -24,4 +24,5 @@ This project requires the following Python libraries:
 ## Installation
 
 To install the required libraries, run the following command in your terminal:
-pip install json
+
+`pip install json`
